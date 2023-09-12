@@ -1,0 +1,70 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  width: clamp(10rem, 40rem, 80%);
+  height: clamp(10rem, 20rem, 80%);
+  background-color: #fff;
+  gap: 1.2rem;
+}
+
+.big {
+  font-size: clamp(2rem, 3.4rem, 60%);
+  margin: 0;
+}
+
+.small {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  height: clamp(10%, 30%, 15%);
+}
+
+.inner2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+  gap: 8px;
+  width: clamp(20%, 60%, 80%);
+  flex-wrap: wrap;
+}
+
+.inner2 > div {
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-height: 240px), (max-width: 161px) {
+  .inner2 {
+    display: none;
+  }
+}
