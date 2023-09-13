@@ -55,6 +55,7 @@ body {
   gap: 8px;
   width: clamp(20%, 60%, 80%);
   flex-wrap: wrap;
+  container-type: inline-size;
 }
 
 .inner2 > div {
@@ -63,8 +64,14 @@ body {
   height: 2rem;
 }
 
-@media (max-height: 240px), (max-width: 161px) {
+@media (max-height: 24rem), (max-width: 16.1rem) {
   .inner2 {
     display: none;
+  }
+}
+
+@container (max-width: 22rem) {
+  .inner2 > div {
+    margin: 0 0.5rem;
   }
 }
