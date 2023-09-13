@@ -18,7 +18,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   width: clamp(10rem, 40rem, 80%);
   height: clamp(10rem, 20rem, 80%);
   background-color: #fff;
@@ -52,7 +52,7 @@ body {
   background-color: #eee;
   padding: 0.4rem 0.8rem;
   border-radius: 0.8rem;
-  gap: 8px;
+  gap: 0.8rem;
   width: clamp(20%, 60%, 80%);
   flex-wrap: wrap;
   container-type: inline-size;
